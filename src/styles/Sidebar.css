@@ -1,0 +1,14 @@
+.sidebar {
+    height: calc(100vh - 58px);
+    padding: 20px 10px;
+    list-style: none;
+    background-color: var(--sidebar-color-100);
+    position: sticky;
+    top: 57px;
+    box-shadow: rgba(50, 49, 49, 0.2) 0px 8px 10px;
+}
+
+li {
+    font-size: 15px;
+    padding: 10px 10px;
+}

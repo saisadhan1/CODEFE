@@ -1,0 +1,22 @@
+.ChallangeEditor {
+    display: flex;
+    gap: 2%;
+    padding: 10px;
+    background-color: var(--bg-color-200);
+
+}
+
+.challange {
+    position: relative;
+    z-index: 2;
+    margin: 30px 0 10px 0;
+}
+
+.challange:hover {
+    opacity: .8;
+}
+
+.compare-image {
+    margin: 30px 0 10px 0;
+    position: absolute;
+}

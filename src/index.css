@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+  color: var(--font-color-100);
+  text-decoration: none;
+}
+
+:root {
+  --font-color-100: rgb(239, 245, 251, 0.8);
+  --font-color-200: #eff5fb;
+  --bg-color-100: #111315;
+  --bg-color-nav: #111315;
+  --sidebar-color-100: #111315;
+  --bg-color-200: #202225;
+  --bg-color-300: #2A86FF;
+  --logo-color: #ffdf00;
+  --h1-color: #ffdf00;
+  --mode-color: #eff5fb;
+  --text-color: #17181a;
+  --border-color: #333c47;
+}
+
+
+:root:has(.mode:checked) {
+  --font-color-100: #17181a;
+  --font-color-200: #eff5fb;
+  --bg-color-100: #ececec;
+  --bg-color-200: #DBE2EF;
+  --bg-color-nav: #111315;
+  --bg-color-300: #2A86FF;
+  --h1-color: #112D4E;
+  --mode-color: #17181a;
+  --text-color: #17181a;
+  --sidebar-color-100: #e2e4ff;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--logo-color);
+  border-radius: 50px;
+}
+
+::selection {
+  color: var(--text-color);
+  background: var(--logo-color);
+}
+
+.ace_editor,
+.ace_editor * {
+  color: var(--font-color-200);
+  font-family: monospace !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  letter-spacing: 0 !important;
+}
+
+.mouse {
+  height: var(--mouse);
+  width: var(--mouse);
+  background-color: var(--logo-color);
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  z-index: 9999;
+  border-radius: 50%;
+  pointer-events: none;
+}
